@@ -30,7 +30,7 @@ const PROJECT_DATABASE = {
         position: "Hardware Engineer",
         desc: "Merancang mesin pencacah pakan ayam elektrik yang terintegrasi dengan Internet of Things (IoT). Sistem menggunakan ESP8266 untuk memantau kecepatan putaran motor (RPM), konsumsi daya listrik, serta total berat pakan yang telah diproses. Seluruh data dikirim secara real-time ke website sehingga kondisi mesin dapat dipantau dengan lebih mudah.",
         tech: ["ESP8266", "IoT", "Sensor RPM", "Sensor Arus", "Load Cell", "Website"],
-        images: ["chopx-1.jpeg", "chopx-2.jpeg", "chopx-3.jpg"],
+        images: ["chopx-1.jpeg", "chopx-2.jpeg", "chopx-3.jpeg"],
         video: null
     },
     'farmshield': {
