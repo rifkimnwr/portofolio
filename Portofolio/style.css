@@ -1,0 +1,103 @@
+/* ==========================================================================
+   NORDIC NEO-BRUTALISME PREMIUM STYLING SPECIFICATION 
+   ========================================================================== */
+
+:root {
+    --nav-blur-bg: rgba(252, 251, 250, 0.85);
+}
+
+.dark {
+    --nav-blur-bg: rgba(9, 9, 11, 0.85);
+}
+
+/* Glassmorphism tipis pada Navigasi */
+.nav-scrolled {
+    background-color: var(--nav-blur-bg);
+    border-color: rgba(228, 228, 231, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.dark .nav-scrolled {
+    border-color: rgba(39, 39, 42, 0.6);
+}
+
+/* Transisi seimbang antar section */
+#home {
+    background-attachment: fixed; /* Membuat efek parallax halus saat di-scroll */
+}
+
+#about {
+    position: relative;
+    z-index: 20; /* Memastikan section About menutup background foto di atasnya dengan sempurna */
+}
+
+/* Nav Link Tracking State */
+.nav-link.active-section {
+    opacity: 1 !important;
+    font-weight: 700;
+    color: #000;
+}
+.dark .nav-link.active-section {
+    color: #fff;
+}
+
+/* Premium Fine Entry Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efek Hover Angkat Kartu (Premium Card Physics) */
+.project-card {
+    will-change: transform, box-shadow;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.04);
+    border-color: #18181b;
+}
+.dark .project-card:hover {
+    box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5);
+    border-color: #f4f4f5;
+}
+
+/* Custom Minimalist Gallery Grids di Modal */
+.modal-gallery-grid img {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+}
+.modal-gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Scrollbar minimalis ala Web Agensi Eropa */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #e4e4e7;
+    border-radius: 99px;
+}
+.dark ::-webkit-scrollbar-thumb {
+    background: #27272a;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a1a1aa;
+}
+
+/* Padding tombol kirim form */
+.py-4\.5 {
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+}
+
