@@ -258,7 +258,7 @@ function initProjectModals() {
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 modal-gallery-grid">
                 ${data.images.map(img => `
                     <div class="overflow-hidden rounded-lg border border-zinc-100 dark:border-zinc-800 bg-zinc-200 dark:bg-zinc-800 cursor-zoom-in">
-                        <img src="images/${img}" alt="Dokumentasi ${data.title}" class="project-gallery-img w-full h-40 sm:h-48 object-cover filter grayscale hover:grayscale-0 transition-all duration-300">
+                        <img src="images/${img}" alt="Dokumentasi ${data.title}" class="project-gallery-img w-full h-40 sm:h-48 object-cover transition-all duration-300">
                     </div>
                 `).join('')}
             </div>
