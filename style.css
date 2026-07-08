@@ -101,3 +101,16 @@
     padding-bottom: 1.125rem;
 }
 
+/* Custom Typography Reset & Core Adjustments */
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Syne', sans-serif;
+}
+
+/* Mempertahankan efek hitam putih pekat khusus background home */
+.contrast-115 {
+    filter: grayscale(1) contrast(1.15) !important;
+}
